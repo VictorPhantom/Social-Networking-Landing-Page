@@ -1,0 +1,359 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree&family=Inter:wght@100;400&family=Roboto:wght@300;400&display=swap');
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Inter';
+}
+.container{
+    padding: 50px 100px;
+}
+.hero{
+    background: linear-gradient(311.76deg, #D4E7FE -15.24%, #FFFFFF 78.85%);
+}
+
+.content-title{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 66px;
+    color: #0A093D;
+}
+.btncommunity{
+width: 200px;
+height: 50px;
+padding: 15px;
+color: #217BF4;
+background: #caddf7;
+border-radius: 8px;
+}
+.btninvite{
+    width: 167px;
+    height: 62px;
+    padding: 20px 30px;
+    /* opacity: 0.5; */
+    color: #217BF4;
+    border: 1px solid #217BF4;
+    border-radius: 14px;
+}
+.btnmore{
+    width: 162px;
+    height: 62px;
+    padding: 20px 30px;
+    color: #FFFFFF;
+    background: #217BF4;
+    box-shadow: 0px 7px 22px -6px rgba(33, 123, 244, 0.34);
+    border-radius: 14px;
+}
+.btnlogin{
+    margin-bottom: 10px;
+}
+
+.btnlogin, .btndiscover{
+    width: 100px;
+    height: 50px;
+    padding: 15px 20px;
+    background: #217BF4;
+    color: #FFFFFF;
+    box-shadow: 0px 7px 22px -6px rgba(33, 123, 244, 0.34);
+    border-radius: 14px;
+
+}
+.getapp{
+    height: 560px;
+    background: #E5F0FD;
+}
+.getapp .container{
+    display: flex;
+    justify-content: space-between;
+}
+.applinks div{
+    display: flex;
+    align-items: center;
+}
+.footer1{
+    background: #2B2B39;
+    color: #FFFFFF;
+}
+.mobileimg{
+    width: 720px;
+
+}
+a{
+    text-decoration: none;
+}
+.navbar{
+    border-bottom: 1px solid #cbddf3;
+}
+.navbar ul li{
+    display: inline-block;
+    list-style-type: none;
+    padding: 0 10px;
+
+}
+.navbar nav{
+    display:flex;
+    justify-content: space-around;
+   align-items: center;
+
+}
+.features .header{
+    text-align: center;
+}
+.houseofcards{
+    margin: 40px;
+    display: grid;
+    grid-template-columns: auto auto; 
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    justify-content: center;
+
+}
+.houseofcards .card img{
+    width: 100px;
+    height: 100px;
+}
+.houseofcards .card{
+    display: flex;
+    padding: 10px;
+    width: 522px;
+    height: 182px;
+    background: #FFFFFF;
+    box-shadow: 14px 22px 52px -12px rgba(127, 127, 127, 0.13);
+    border-radius: 14px;
+}
+.achievements .container{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+    align-items: center;
+}
+.achievements .first{
+    box-shadow: 0px 26px 49px rgba(146, 165, 184, 0.14);
+
+}
+.achievements .card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px;
+    row-gap: 20px;
+    justify-content: center;
+    width: 336px;
+    height: 340px;
+    background: #FFFFFF;
+    border-radius: 14px;    
+}
+.achievements .container div p{
+    font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 28px;
+color: #656464;
+}
+.content{
+    display:flex;
+    margin: 70px 0;
+    column-gap: 10px;
+
+}
+.content-body {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.justification{
+    margin: 70px 0;
+}
+.legalname{
+    font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 26px;  
+color: #2F2C4A;
+}
+.justification-title, .news-title, .getapp-title,.features-title,.achievements-title,.members-title{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 48px;
+color: #0A093D;
+}
+.justification ul{
+    list-style-type: none;
+}
+.justification ul li::before {content: "•"; color: #217BF4}
+.question{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 18px;
+color: #217BF4;
+}
+.img1{
+    width: 270px;
+height: 368px;
+margin: auto 0;
+}
+.img3, .img2{
+ border-radius: 10px;
+width: 265px;
+height: 238px;
+}
+.justification .container{
+    display: flex;
+    row-gap: 20px;
+}
+.justification .container .images{
+    display: flex;
+    column-gap: 10px;
+}
+.images div{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.members .header{
+    text-align: center;
+}
+.members .header p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+
+    color: #656464;
+}
+.pagination ul li{
+    list-style-type: none;
+    display: inline;
+
+}
+.pagination ul .active{
+background: #217BF4;
+padding: 20px 40px;
+color: #FFFFFF;
+box-shadow: 0px 7px 22px -6px rgba(0, 72, 168, 0.34);
+border-radius: 14px;
+}
+.pagination{
+   margin: auto;
+    width: 474px;
+    background: #c6deff;
+    border-radius: 14px;
+}
+.pagination ul{
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.activemembers{
+    display: flex;
+    justify-content: space-around;
+}
+.activemembers .first{
+    box-shadow: 0px 34px 68px rgba(116, 115, 128, 0.1);
+
+}
+.activemembers div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 10px;
+    background: #FFFFFF;
+    border-radius: 14px;
+    width: fit-content;
+    padding: 20px;
+    height: 316px;
+}
+
+.updates{
+    display: flex;
+    justify-content: space-between;
+}
+.updates div .caption{
+
+    display: flex;
+    column-gap: 10px;
+    margin: 10px 0  ;
+    align-items: flex-start;
+}
+.updates div .caption h5{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+}
+.news .header{
+    text-align: center;
+    margin: 50px 0;
+}
+.newsletter{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.newsletter form input[type='email']{
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-left:1px white solid;
+    border-top:1px white solid;
+    border-bottom:1px white solid;
+    border-right: none;
+    background: #2B2B39;
+    padding: 10px 20px;
+}
+.newsletter form input[type='submit']{
+    position: relative;
+    left:-70px;
+    border-radius: 12px;
+    background: #FFFFFF;
+    padding: 12px 20px;
+    border-radius: 12px;
+    border: none;
+}
+.newsletter form ::placeholder{
+    letter-spacing: 0.0125em;
+    color: #717179;
+}
+
+.footer1 .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+
+footer .container nav {
+    display: flex;
+    column-gap: 70px;
+}
+.footer1 ul li{
+    padding-bottom:15px ;
+    list-style-type: none;
+}
+.footer2 .icons img{
+    padding: 0 5px;
+}
+.footer2 {
+    color: white;
+    background: #20202D;
+}
+.line{
+    border: 2px solid #FFAF2E;
+    width: 39px;
+    height: 0px;
+}
+.footer2 .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
