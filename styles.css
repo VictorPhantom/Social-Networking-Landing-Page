@@ -18,7 +18,7 @@
     font-style: normal;
     font-weight: 700;
     font-size: 56px;
-    line-height: 66px;
+    line-height: 66px;  
     color: #0A093D;
 }
 .btncommunity{
@@ -30,18 +30,15 @@ background: #caddf7;
 border-radius: 8px;
 }
 .btninvite{
-    width: 167px;
-    height: 62px;
-    padding: 20px 30px;
+    margin: 0 20px;
+    padding: 20px 40px;
     /* opacity: 0.5; */
     color: #217BF4;
     border: 1px solid #217BF4;
     border-radius: 14px;
 }
 .btnmore{
-    width: 162px;
-    height: 62px;
-    padding: 20px 30px;
+    padding: 20px 40px;
     color: #FFFFFF;
     background: #217BF4;
     box-shadow: 0px 7px 22px -6px rgba(33, 123, 244, 0.34);
@@ -69,8 +66,20 @@ border-radius: 8px;
     display: flex;
     justify-content: space-between;
 }
+.applinks p{
+    margin: 20px 0;
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+color: #656464;
+
+}
 .applinks div{
     display: flex;
+    justify-content: space-between;
+    column-gap: 25px;
     align-items: center;
 }
 .footer1{
@@ -91,11 +100,65 @@ a{
     display: inline-block;
     list-style-type: none;
     padding: 0 10px;
+}
+[type="search"]{
+    border-radius: 14px;
+    
+    border: none;
+    border-bottom: 1px solid #E5E5E5;
+    padding-left: 30px;
+    padding-top:10px ;
+    padding-bottom:10px ;
+}
+.search{
+    position: relative;
+}
 
+img[src="images/MagnifyingGlass.png"]{
+    position: absolute;
+    z-index: 2;
+    left:7px;
+    top:13px;
+}
+
+img[src="images/apple-logo.png"]{
+    width:50px;
+    height:50px;
+}
+img[src="images/google-play (1).png"]{
+    width:50px;
+    height:50px;
+}
+
+.applestore{
+    display: grid;
+    grid-template-columns: auto auto;
+    
+}
+.playstore{
+    display: grid;
+    grid-template-columns: auto auto;
+    
+}
+.applestore{
+    
+background: white;
+padding: 10px 40px;
+border-radius:10px;
+font-family: 'Inter';
+color: #656464;
+
+}
+.playstore{
+    font-family: 'Inter';
+    background:#131277;
+    padding: 10px 40px;
+    border-radius:10px;
+    color: white;
 }
 .navbar nav{
     display:flex;
-    justify-content: space-around;
+    justify-content: space-between;
    align-items: center;
 
 }
@@ -117,9 +180,7 @@ a{
 }
 .houseofcards .card{
     display: flex;
-    padding: 10px;
-    width: 522px;
-    height: 182px;
+    padding: 20px;
     background: #FFFFFF;
     box-shadow: 14px 22px 52px -12px rgba(127, 127, 127, 0.13);
     border-radius: 14px;
@@ -129,6 +190,10 @@ a{
     justify-content: space-between;
     column-gap: 20px;
     align-items: center;
+}
+.achievements .less p{
+    margin-top: 20px;
+    margin-bottom: 60px;
 }
 .achievements .first{
     box-shadow: 0px 26px 49px rgba(146, 165, 184, 0.14);
@@ -156,9 +221,11 @@ color: #656464;
 .content{
     display:flex;
     margin: 70px 0;
+    align-items: center;
     column-gap: 10px;
 
 }
+
 .content-body {
     display: flex;
     flex-direction: column;
@@ -181,11 +248,28 @@ font-weight: 700;
 font-size: 36px;
 line-height: 48px;
 color: #0A093D;
+margin: 20px 0;
+}
+.justification p{
+    margin: 20px 0;
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 28px;
+/* or 175% */
+
+
+color: #656464;
 }
 .justification ul{
     list-style-type: none;
 }
-.justification ul li::before {content: "•"; color: #217BF4}
+.justification ul li{
+    padding: 5px;
+
+}
+.justification ul li::before {content: "• "; color: #217BF4; }
 .question{
     font-family: 'Inter';
 font-style: normal;
@@ -206,21 +290,24 @@ height: 238px;
 }
 .justification .container{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     row-gap: 20px;
 }
 .justification .container .images{
     display: flex;
-    column-gap: 10px;
+    column-gap: 30px;
 }
 .images div{
     display: flex;
     flex-direction: column;
-    row-gap: 10px;
+    row-gap: 30px;
 }
 .members .header{
     text-align: center;
 }
 .members .header p{
+    margin: 30px 0;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -257,6 +344,7 @@ border-radius: 14px;
 .activemembers{
     display: flex;
     justify-content: space-around;
+    margin: 50px 0;
 }
 .activemembers .first{
     box-shadow: 0px 34px 68px rgba(116, 115, 128, 0.1);
@@ -282,9 +370,10 @@ border-radius: 14px;
 
     display: flex;
     column-gap: 10px;
-    margin: 10px 0  ;
+    margin: 10px 0 ;
     align-items: flex-start;
 }
+
 .updates div .caption h5{
     font-style: normal;
     font-weight: 600;
@@ -298,7 +387,7 @@ border-radius: 14px;
 .newsletter{
     display: flex;
     flex-direction: column;
-    row-gap: 10px;
+    row-gap: 30px;
 }
 .newsletter form input[type='email']{
     border-top-left-radius: 12px;
@@ -331,13 +420,16 @@ border-radius: 14px;
 
 }
 
-footer .container nav {
+.footer1 .container nav {
     display: flex;
     column-gap: 70px;
 }
 .footer1 ul li{
     padding-bottom:15px ;
     list-style-type: none;
+}
+.footer1 ul .heading{
+    margin-bottom: 20px ;
 }
 .footer2 .icons img{
     padding: 0 5px;
