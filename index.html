@@ -16,7 +16,14 @@
             <a href="" class="brand-name"><img src="images/logo.png" alt=""></a>
             <ul>
               <li><a href="">Home</a></li>
-              <li><a href="">Community <img src="images/CaretDown.png" alt=""></a></li>
+              <li id="communitydrop" onclick="showdropdown()">Community <img src="images/CaretDown.png" alt="">
+              <ul id="communitydropvalues">
+                <li><a href="">News Feed</a> </li>
+                <li><a href="">Profile</a></li>
+                <li><a href="">Friends</a></li>
+                <li><a href="">Forums</a></li>
+              </ul>
+              </li>
               <li><a href="">Blog</a></li>
               <li><a href="">Events</a></li>
             </ul>
@@ -75,14 +82,14 @@
   <section class="achievements">
       <div class="container">
         <div class="card first">
-          <span><img src="images/Star.png" alt=""> 4.8 Rating</span>
-          <span><img src="images/people.png" alt="">836k+ Members </span>
+          <div><img src="images/Star.png" alt=""> 4.8 Rating</div>
+          <div><img src="images/people.png" alt="">836k+ Members </div>
           <p>More than 2 billion we people over <br> countries use socibooks we to stay <br> in touch with friends.</p>
           <a href="">Join our community <img src="images/ArrowRight (1).png" alt=""></a>
         </div>
         <div class="card">
-          <span><img src="images/Trophy.png" alt="">Awards</span>
-          <span><img src="images/Ellipse 14.png" alt="">Best of 2021 on Github</span>
+          <div><img src="images/Trophy.png" alt="">Awards</div>
+          <div><img src="images/Ellipse 14.png" alt="">Best of 2021 on Github</div>
           <p>More than 2 billion we people over <br> countries use socibooks we to stay <br> in touch with friends.</p>
           <a href="">Go To Awards <img src="images/ArrowRight (3).png" alt=""></a>
         </div>
@@ -272,7 +279,7 @@
         <p>Subscribe to be the first one to know <br> about updates. Enter your email</p>
         <form action="" method="post">
           <input type="email" name="" id="" placeholder="Email Address">
-          <input type="submit" value="Subscribe">
+          <button type="submit">Subscribe</button>
         </form>
       </div>
 
@@ -295,3 +302,11 @@
 </footer>
 </body>
 </html>
+<script>
+  function showdropdown(){
+    var dropdown=document.getElementById("communitydropvalues");
+    dropdown.style.display='block';
+  }
+ 
+
+</script>

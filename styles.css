@@ -44,19 +44,18 @@ border-radius: 8px;
     box-shadow: 0px 7px 22px -6px rgba(33, 123, 244, 0.34);
     border-radius: 14px;
 }
-.btnlogin{
-    margin-bottom: 10px;
-}
+
 
 .btnlogin, .btndiscover{
-    width: 100px;
-    height: 50px;
-    padding: 15px 20px;
+    padding: 8px 30px;
     background: #217BF4;
     color: #FFFFFF;
     box-shadow: 0px 7px 22px -6px rgba(33, 123, 244, 0.34);
     border-radius: 14px;
 
+}
+.btndiscover{
+    padding: 15px 30px;
 }
 .getapp{
     height: 560px;
@@ -96,10 +95,29 @@ a{
 .navbar{
     border-bottom: 1px solid #cbddf3;
 }
+.navbar ul{
+    position: relative;
+
+}
 .navbar ul li{
     display: inline-block;
     list-style-type: none;
     padding: 0 10px;
+    
+}
+.navbar ul li ul li{
+    display: block;
+
+}
+.navbar ul li ul{
+    top:50px;
+    position: absolute;
+    display: none;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #E5E5E5;
+    box-shadow: 14px 22px 52px -12px rgba(127, 127, 127, 0.13);
+
 }
 [type="search"]{
     border-radius: 14px;
@@ -217,6 +235,13 @@ font-weight: 400;
 font-size: 16px;
 line-height: 28px;
 color: #656464;
+}
+.achievements .card div{
+    display: flex;
+    align-items: center;
+} 
+.achievements .card div img{
+    margin-right: 5px;
 }
 .content{
     display:flex;
@@ -399,14 +424,15 @@ border-radius: 14px;
     background: #2B2B39;
     padding: 10px 20px;
 }
-.newsletter form input[type='submit']{
+.newsletter form button[type='submit']{
     position: relative;
-    left:-70px;
+    left:-40px;
     border-radius: 12px;
     background: #FFFFFF;
     padding: 12px 20px;
     border-radius: 12px;
     border: none;
+    color: #2B2B39;
 }
 .newsletter form ::placeholder{
     letter-spacing: 0.0125em;
@@ -442,6 +468,7 @@ border-radius: 14px;
     border: 2px solid #FFAF2E;
     width: 39px;
     height: 0px;
+    margin-top: 10px;
 }
 .footer2 .container{
     display: flex;
