@@ -16,8 +16,8 @@
             <a href="" class="brand-name"><img src="images/logo.png" alt=""></a>
             <ul>
               <li><a href="">Home</a></li>
-              <li id="communitydrop" onclick="showdropdown()">Community <img src="images/CaretDown.png" alt="">
-              <ul id="communitydropvalues">
+              <li id="communitydrop" >Community <img src="images/CaretDown.png" alt="">
+              <ul id="communitydropvalues" class="active">
                 <li><a href="">News Feed</a> </li>
                 <li><a href="">Profile</a></li>
                 <li><a href="">Friends</a></li>
@@ -303,10 +303,16 @@
 </body>
 </html>
 <script>
-  function showdropdown(){
-    var dropdown=document.getElementById("communitydropvalues");
-    dropdown.style.display='block';
-  }
+  
+    var dropdownButton=document.getElementById("communitydrop");
+    const dropdownList=document.getElementById("communitydropvalues");
+    // dropdown.style.display='block';
+    function click(){
+      console.log('click');
+      dropdownList.classList.toggle('active');
+    }
+    dropdownButton.addEventListener('click',click);
+
  
 
 </script>
