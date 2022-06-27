@@ -16,8 +16,8 @@
             <a href="" class="brand-name"><img src="images/logo.png" alt=""></a>
             <ul>
               <li><a href="">Home</a></li>
-              <li id="communitydrop" >Community <img src="images/CaretDown.png" alt="">
-              <ul id="communitydropvalues" class="active">
+              <li id="communitydrop" onclick="hideDropdown()" >Community <img src="images/CaretDown.png" alt="">
+              <ul id="communitydropvalues" >
                 <li><a href="">News Feed</a> </li>
                 <li><a href="">Profile</a></li>
                 <li><a href="">Friends</a></li>
@@ -40,7 +40,6 @@
       <div class="content">
         <div class="content-body">
           <a href="" class="btncommunity">Notebook Community</a>
-          
           <span class="content-title">Your Solutions For Community!</span>
           <p>More than 2 billion people in over countries use socibook <br> to stay in touch with friends & family.</p>
           <br>
@@ -162,11 +161,11 @@
       <span class="question">Valuable Team</span>
       <h3 class="members-title">Our Active Members</h3>
       <p>when an unknown printer took a galley of type and meeting <br> fari scrambled it.</p>
-      <div class="pagination">
+      <div class="pagination" id="pagination">
         <ul>
-          <li>Newest</li>
-          <li>Popular</li>
-          <li class="active">Active</li>
+          <li class="btn">Newest</li>
+          <li class="btn">Popular</li>
+          <li class="btn clickactive">Active</li>
         </ul>
       </div>
     </div>
@@ -305,14 +304,26 @@
 <script>
   
     var dropdownButton=document.getElementById("communitydrop");
-    const dropdownList=document.getElementById("communitydropvalues");
-    // dropdown.style.display='block';
-    function click(){
-      console.log('click');
-      dropdownList.classList.toggle('active');
+    function hideDropdown(){
+      const dropdownList=document.getElementById("communitydropvalues");
+      if (dropdownList.style.display=='none'){
+        dropdownList.style.display='block';
+      }
+      else{
+        dropdownList.style.display='none';
+      }
     }
-    dropdownButton.addEventListener('click',click);
+    const header= document.getElementById('pagination');
 
- 
+ const paginationList= header.getElementsByClassName("btn");
+for(i=0;i<paginationList.length;i++){
+  paginationList[i].addEventListener('click', function(){
+    var currentActive= document.getElementsByClassName(' clickactive');
+  currentActive[0].className=currentActive[0].className.replace(" clickactive","");
+  // paginationList[i].classList.toggle('active'); 
+  this.className+=' clickactive';
+  });
+
+}
 
 </script>
