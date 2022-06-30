@@ -97,8 +97,12 @@ color: #656464;
 }
 a{
     text-decoration: none;
+    color:black;
 }
 .navbar{
+    margin-bottom:4px;
+}
+.hero .header{
     border-bottom: 1px solid #cbddf3;
 }
 .navbar ul{
@@ -117,7 +121,7 @@ a{
 
 }
 .navbar ul li ul{
-
+    display:none;
     top:50px;
     position: absolute;
     border-radius: 10px;
@@ -175,7 +179,7 @@ img[src="images/google-play (1).png"]{
 .applestore{
     
 background: white;
-padding: 10px 40px;
+padding: 10px 20px;
 border-radius:10px;
 font-family: 'Inter';
 color: #656464;
@@ -184,9 +188,12 @@ color: #656464;
 .playstore{
     font-family: 'Inter';
     background:#131277;
-    padding: 10px 40px;
+    padding: 10px 20px;
     border-radius:10px;
     color: white;
+}
+.applestore:hover,.playstore:hover{
+    box-shadow: 0px 40px 48px rgba(116, 115, 128, 0.1);
 }
 .navbar nav{
     display:flex;
@@ -238,11 +245,9 @@ color: #656464;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-left: 20px;
+    padding:20px 30px;
     row-gap: 20px;
     justify-content: center;
-    width: 336px;
-    height: 340px;
     background: #FFFFFF;
     border-radius: 14px;    
 }
@@ -361,7 +366,7 @@ height: 238px;
 
     color: #656464;
 }
-.pagination{
+.pagination ul{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -375,9 +380,12 @@ height: 238px;
     align-items: center;
     column-gap: 50px;
 }
+.pagination .btn{
+    padding: 10px 30px;
+}
  .clickactive{
     background: #217BF4;
-    padding: 20px 30px;
+    padding: 10px 30px;
     color: #FFFFFF;
     box-shadow: 0px 7px 22px -6px rgba(0, 72, 168, 0.34);
     border-radius: 14px;
@@ -394,11 +402,11 @@ height: 238px;
     justify-content: space-around;
     margin: 50px 0;
 }
-.activemembers .first{
-    box-shadow: 0px 34px 68px rgba(116, 115, 128, 0.1);
+.activemembers .card:hover{
+    box-shadow: 0px 50px 68px rgba(116, 115, 128, 0.1);
 
 }
-.activemembers div{
+.activemembers .card{
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -406,8 +414,7 @@ height: 238px;
     background: #FFFFFF;
     border-radius: 14px;
     width: fit-content;
-    padding: 20px;
-    height: 316px;
+    padding: 10px 20px;
 }
 
 .updates{
@@ -494,6 +501,11 @@ justify-content: center;
 }
 .footer2 .icons img{
     padding: 0 5px;
+    
+}
+.footer2 .icons img :hover{
+    transition: ease-in-out 5s;
+   transform:scale(1.1);
 }
 .footer2 {
     color: white;
@@ -513,11 +525,16 @@ justify-content: center;
 }
 
 @media screen and (max-width: 800px) {
+    .container{
+        padding: 20px 50px;
+    }
     .navbar ul li{
         display: block;
         padding:5px 0;
     }
-
+    .hero .header{
+        border: none;
+    }
     .navbar ul li ul{
         position: static;
         
@@ -568,7 +585,6 @@ justify-content: center;
     }
     .achievements .card{
         align-items: center;
-        padding: 0%;
         justify-content: center;
     }
     .achievements .card div{
@@ -625,5 +641,17 @@ justify-content: center;
         grid-template-columns: auto;
         align-items: center;
     }
-    
+    .houseofcards .card{
+        display: flex;
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+    }
+    .pagination ul{
+        padding:10px;
+    }
+    .pagination .btn{
+        padding: 5px;
+    }
+     
 }
